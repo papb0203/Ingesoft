@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Muppy 2 entrega/Muppy 2 entrega/__MACOSX/muppy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Muppy 2 entrega/Muppy 2 entrega/__MACOSX/muppy" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Muppy 2 entrega/Muppy 2 entrega/muppy" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Muppy 2 entrega/Muppy 2 entrega/muppy" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
