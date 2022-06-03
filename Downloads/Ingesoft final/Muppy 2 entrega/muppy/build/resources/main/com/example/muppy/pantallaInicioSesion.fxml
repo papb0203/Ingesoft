@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.PantallaInicioSesionUG">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="848.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ImagenInicio.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="376.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="muppy">
+         <font>
+            <Font name="Al Bayan Plain" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="385.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="correoVerif" layoutX="344.0" layoutY="221.0" promptText="Correo@muppy.com" />
+      <TextField fx:id="contraseniaVerif" layoutX="344.0" layoutY="272.0" promptText="••••••••••••" />
+      <Text fx:id="BotonIniciarSesion" fill="#419aed" layoutX="385.0" layoutY="354.0" onMouseClicked="#pantallaInicioSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesión">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="BotonAtras" fill="#419aed" layoutX="296.0" layoutY="20.0" onMouseClicked="#pantallaInicio" strokeType="OUTSIDE" strokeWidth="0.0" text="Atras">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

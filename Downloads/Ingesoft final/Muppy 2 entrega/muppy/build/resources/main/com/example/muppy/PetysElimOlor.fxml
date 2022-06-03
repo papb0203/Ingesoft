@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.PantallaProductosGato">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ab2cc" height="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="848.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screen_Shot_2022-05-07_at_5.12.17_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscar" layoutX="85.0" layoutY="7.0" opacity="0.96" promptText="Buscar" />
+      <ImageView fx:id="carritoCompras" fitHeight="25.0" fitWidth="38.0" layoutX="803.0" layoutY="7.0" onMouseClicked="#mostrarCarrito" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenCarrito.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="perfil" fitHeight="25.0" fitWidth="38.0" layoutX="751.0" layoutY="7.0" onMouseClicked="#mostrarPerfil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productosGato" layoutX="282.0" layoutY="24.0" onMouseClicked="#mostrarProductosG" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gatos" />
+      <Text fx:id="productosPerro" layoutX="366.0" layoutY="24.0" onMouseClicked="#mostrarProductosP" strokeType="OUTSIDE" strokeWidth="0.0" text="Para perros" />
+      <Text fx:id="veterinarias" layoutX="459.0" layoutY="24.0" onMouseClicked="#MostrarVeterinarias" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinarias" />
+      <Text fx:id="productosGenerales" layoutX="559.0" layoutY="24.0" onMouseClicked="#mostrarProductosGen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestros productos" />
+      <Text layoutX="384.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Petys - Eliminador De Olores">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="EliminOloresProd" fitHeight="301.0" fitWidth="266.0" layoutX="74.0" layoutY="113.0" onMouseClicked="#mostrarProducto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/RoseadorGato.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="384.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="384.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$17.600" wrappingWidth="149.7928466796875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="384.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="recomendamos su aplicación en especial en los lugares que más frecuenta tu mascota. Es un spray que eliminará los malos olores de las mascotas en el ambiente. Aportará frescura y limpieza, eliminará el 99.9 % de las bacterias asociadas al mal olor." wrappingWidth="405.89501953125" />
+      <Text layoutX="384.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beneficios" wrappingWidth="149.7928466796875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="384.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad" wrappingWidth="149.7928466796875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="comprar" layoutX="491.0" layoutY="246.0" mnemonicParsing="false" text="Comprar" />
+      <TextField fx:id="cantidad" layoutX="384.0" layoutY="246.0" prefHeight="25.0" prefWidth="58.0" promptText="1" />
+      <Hyperlink text="Hyperlink" />
+   </children>
+</AnchorPane>
