@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.PantallaRegController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="848.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ImagenInicio.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="377.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="muppy">
+         <font>
+            <Font name="Al Bayan Plain" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="386.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="botonEntrar" fill="#419aed" layoutX="406.0" layoutY="475.0" onMouseClicked="#pantallaRegistro" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrar">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombre" layoutX="345.0" layoutY="188.0" />
+      <Text layoutX="346.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Completo" wrappingWidth="161.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="correo" layoutX="345.0" layoutY="239.0" />
+      <Text layoutX="346.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" wrappingWidth="78.81356048583984">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="contrasenia" layoutX="345.0" layoutY="293.0" />
+      <Text layoutX="344.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo" wrappingWidth="44.3876953125">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="telefono" layoutX="345.0" layoutY="344.0" />
+      <Text layoutX="346.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono" wrappingWidth="54.3876953125">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="direccion" layoutX="345.0" layoutY="398.0" />
+      <Text layoutX="346.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección" wrappingWidth="66.46630859375">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="botonAtras" fill="#419aed" layoutX="295.0" layoutY="13.0" onMouseClicked="#pantallaInicio" strokeType="OUTSIDE" strokeWidth="0.0" text="Atras">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

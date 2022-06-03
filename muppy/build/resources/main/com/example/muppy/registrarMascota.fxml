@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.RegistrarMascotaController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="848.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ImagenInicio.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="377.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="muppy">
+         <font>
+            <Font name="Al Bayan Plain" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="386.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="botonFinalizar" fill="#419aed" layoutX="400.0" layoutY="471.0" onMouseClicked="#pantallaRegistro" strokeType="OUTSIDE" strokeWidth="0.0" text="Finalizar">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="341.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de tu amigo peludo" wrappingWidth="168.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nombreMascota" layoutX="341.0" layoutY="159.0" prefHeight="5.0" prefWidth="161.0" />
+      <Text layoutX="341.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tamaño" wrappingWidth="168.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="341.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Raza" wrappingWidth="168.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="338.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edad" wrappingWidth="44.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="edadMascota" layoutX="338.0" layoutY="391.0" prefHeight="25.0" prefWidth="44.0" />
+      <Text layoutX="465.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso (kg)" wrappingWidth="56.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pesoMascota" layoutX="465.0" layoutY="391.0" prefHeight="25.0" prefWidth="44.0" />
+      <Text layoutX="338.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo" wrappingWidth="44.0">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="tamanioMascota" layoutX="347.0" layoutY="215.0" prefWidth="150.0" />
+      <ToggleButton fx:id="tipoPerro" layoutX="368.0" layoutY="276.0" mnemonicParsing="false" selected="true" style="-fx-background-color: #F3B7C1; -fx-border-color: #000000;" text="Perro">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipoMascota" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="tipoGato" layoutX="411.0" layoutY="276.0" mnemonicParsing="false" style="-fx-background-color: #C3F0ED; -fx-border-color: #000000;" text="Gato" toggleGroup="$tipoMascota" />
+      <Text fx:id="botonAtras" fill="#419aed" layoutX="294.0" layoutY="19.0" onMouseClicked="#pantallaInicio" strokeType="OUTSIDE" strokeWidth="0.0" text="Atras">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="razaMascota" layoutX="347.0" layoutY="331.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.MenuDescuentos">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ab2cc" height="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="848.0" />
+      <ImageView fx:id="menu" fitHeight="42.0" fitWidth="45.0" onMouseClicked="#volverMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screen_Shot_2022-05-07_at_5.12.17_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscar" layoutX="85.0" layoutY="7.0" opacity="0.96" promptText="Buscar" />
+      <ImageView fx:id="carritoCompras" fitHeight="25.0" fitWidth="38.0" layoutX="803.0" layoutY="7.0" onMouseClicked="#mostrarCarrito" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenCarrito.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="perfil" fitHeight="25.0" fitWidth="38.0" layoutX="751.0" layoutY="7.0" onMouseClicked="#mostrarPerfil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productosGato" layoutX="282.0" layoutY="24.0" onMouseClicked="#mostrarProductosG" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gatos" />
+      <Text fx:id="productosPerro" layoutX="366.0" layoutY="24.0" onMouseClicked="#mostrarProductosP" strokeType="OUTSIDE" strokeWidth="0.0" text="Para perros" />
+      <Text fx:id="veterinarias" layoutX="459.0" layoutY="24.0" onMouseClicked="#MostrarVeterinarias" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinarias" />
+      <Text fx:id="productosGenerales" layoutX="559.0" layoutY="24.0" onMouseClicked="#mostrarProductosGen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestros productos" />
+      <Text layoutX="229.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenemos grandes descuentos para tu mascota">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="95.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comida de perro">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="88.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arena de gato">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="95.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/comidaGuamor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="265.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/comidaPedigree.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="RingoComida" fitHeight="107.0" fitWidth="130.0" layoutX="469.0" layoutY="149.0" onMouseClicked="#motraraRingoP" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/comidaRingo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="677.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/DogChow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="90.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/arenaSandCat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="260.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/arenaPetys.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="476.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/arenaHakuna.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EliminOloresProd" fitHeight="107.0" fitWidth="130.0" layoutX="672.0" layoutY="339.0" onMouseClicked="#mostrarProducto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenesDescuentos/arenaMirringo.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="457.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arena Hakuna salvaje 4,5 kg" wrappingWidth="133.37158203125">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="241.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arena prtys aglomerante 4,5 kg" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="96.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arena Sand &amp; Cat 4kg" wrappingWidth="102.9946517944336">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="675.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mirringo arena 10 kg" wrappingWidth="99.40937805175781">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="670.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dog Chow adulto 22kg" wrappingWidth="109.17922973632812">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="473.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ringo adulto 500Gr" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="266.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedigree adultos 1kg" wrappingWidth="119.65730124898289">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="97.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guamor adulto 2kg" wrappingWidth="99.40937805175781">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="246.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30% desueto">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="246.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10% desueto">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="125.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 14.700">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="304.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 13.400">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="504.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 3.600">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="701.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 166.900">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="125.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 18.100">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="295.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 22.800">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="500.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 16.500">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+      <Text fill="#b231ae" layoutX="696.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$ 47.800">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

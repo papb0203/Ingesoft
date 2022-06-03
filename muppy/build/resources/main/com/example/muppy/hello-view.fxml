@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.PantallaInicio">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="848.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ImagenInicio.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="376.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="muppy">
+         <font>
+            <Font name="Al Bayan Plain" size="32.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="75.0" fitWidth="80.0" layoutX="385.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="BotonIniciar" fill="#419aed" layoutX="385.0" layoutY="331.0" onMouseClicked="#iniciarSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="Iniciar Sesión">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="botonRegistrar" fill="#419aed" layoutX="388.0" layoutY="357.0" onMouseClicked="#pantallaRegistro" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrtarse">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="entrarVisitante" fill="#419aed" layoutX="364.0" layoutY="401.0" onMouseClicked="#entrarMenuPrincipal" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrar como visitante">
+         <font>
+            <Font name="Al Bayan Plain" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="entrarVeterinaria" fill="#419aed" layoutX="355.0" layoutY="460.0" onMouseClicked="#registroVeterinaria" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Tienes veterinaria?, registrala">
+         <font>
+            <Font name="Al Bayan Plain" size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

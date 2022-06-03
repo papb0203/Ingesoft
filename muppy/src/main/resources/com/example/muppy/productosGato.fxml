@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.PantallaProductosGato">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ab2cc" height="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="848.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screen_Shot_2022-05-07_at_5.12.17_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscar" layoutX="85.0" layoutY="7.0" opacity="0.96" promptText="Buscar" />
+      <ImageView fx:id="carritoCompras" fitHeight="25.0" fitWidth="38.0" layoutX="803.0" layoutY="7.0" onMouseClicked="#mostrarCarrito" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenCarrito.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="perfil" fitHeight="25.0" fitWidth="38.0" layoutX="751.0" layoutY="7.0" onMouseClicked="#mostrarPerfil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productosGato" layoutX="282.0" layoutY="24.0" onMouseClicked="#mostrarProductosG" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gatos" />
+      <Text fx:id="productosPerro" layoutX="366.0" layoutY="24.0" onMouseClicked="#mostrarProductosP" strokeType="OUTSIDE" strokeWidth="0.0" text="Para perros" />
+      <Text fx:id="veterinarias" layoutX="459.0" layoutY="24.0" onMouseClicked="#MostrarVeterinarias" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinarias" />
+      <Text fx:id="productosGenerales" layoutX="559.0" layoutY="24.0" onMouseClicked="#mostrarProductosGen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestros productos" />
+      <Text layoutX="45.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Encuentra todos los productos para tu gato">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="85.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comida">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="78.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cuidado del gato">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="85.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/comida-Whiskas.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="255.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Purina-Cat-Chow-Comida.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="459.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/DaliComida.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="667.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/mirrigo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="80.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/cepilloGato.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="250.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Furminator_Gato.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="454.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/shampooGatos.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="EliminOloresProd" fitHeight="107.0" fitWidth="130.0" layoutX="662.0" layoutY="338.0" onMouseClicked="#mostrarProducto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/RoseadorGato.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="419.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shampoo 2 En 1 Dinky Gato - Frasco" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="241.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Furminator - Deslanador Gato Pequeño Pelo Corto." wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="84.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Safari - Cepillo Suave" wrappingWidth="105.26202231831883">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="649.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Petys - Eliminador De Olores" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="664.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mirringo adulto 8kg" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="463.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dali carne 1kg" wrappingWidth="149.7928466796875">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="256.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cat chow adultos 15kg" wrappingWidth="119.65730124898289">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whiskas poyo 15kg" wrappingWidth="99.40937805175781">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

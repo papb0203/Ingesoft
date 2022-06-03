@@ -1,0 +1,20 @@
+Ringo 8
+36000.0
+Ringo 3
+13500.0
+Petys Olor 2
+26400.0
+Petys Olor 6
+79200.0
+Petys Olor 1
+13200.0
+Ringo 4
+18000.0
+Petys Olor 7
+92400.0
+Ringo 4
+18000.0
+Petys Olor 6
+79200.0
+Ringo 5
+22500.0

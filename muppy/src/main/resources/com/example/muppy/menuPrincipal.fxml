@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.ControladorMenuPrincipal">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ab2cc" height="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="848.0" />
+      <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screen_Shot_2022-05-07_at_5.12.17_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscar" layoutX="85.0" layoutY="7.0" opacity="0.96" promptText="Buscar" />
+      <ImageView fx:id="carritoCompras" fitHeight="25.0" fitWidth="38.0" layoutX="803.0" layoutY="7.0" onMouseClicked="#mostrarCarrito" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenCarrito.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="perfil" fitHeight="25.0" fitWidth="38.0" layoutX="751.0" layoutY="7.0" onMouseClicked="#mostrarPerfil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productosGato" layoutX="282.0" layoutY="24.0" onMouseClicked="#mostrarProductosG" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gatos" />
+      <Text fx:id="productosPerro" layoutX="366.0" layoutY="24.0" onMouseClicked="#mostrarProductosP" strokeType="OUTSIDE" strokeWidth="0.0" text="Para perros" />
+      <Text fx:id="veterinarias" layoutX="459.0" layoutY="24.0" onMouseClicked="#MostrarVeterinarias" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinarias" />
+      <Text fx:id="productosGenerales" layoutX="559.0" layoutY="24.0" onMouseClicked="#mostrarProductosGen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestros productos" />
+      <ImageView fitHeight="170.0" fitWidth="569.0" layoutX="140.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ImagenComidaPerro.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="descuentos" layoutX="315.0" layoutY="78.0" onMouseClicked="#mostrarDescuentos" strokeType="OUTSIDE" strokeWidth="0.0" text="Descuentos Imperdibles">
+         <font>
+            <Font name="Apple Color Emoji" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marcas destacadas">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="63.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/marca1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="247.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/marca2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="452.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/marca3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="128.0" layoutX="660.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/marca4.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="492.0" prefWidth="848.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.muppy.CarroCompras">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7ab2cc" height="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="848.0" />
+      <ImageView fx:id="menu" fitHeight="42.0" fitWidth="45.0" onMouseClicked="#volverMenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Screen_Shot_2022-05-07_at_5.12.17_PM-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="buscar" layoutX="85.0" layoutY="7.0" opacity="0.96" promptText="Buscar" />
+      <ImageView fx:id="carritoCompras" fitHeight="25.0" fitWidth="38.0" layoutX="803.0" layoutY="7.0" onMouseClicked="#mostrarCarrito" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/imagenCarrito.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="perfil" fitHeight="25.0" fitWidth="38.0" layoutX="751.0" layoutY="7.0" onMouseClicked="#mostrarPerfil" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/perfil.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="productosGato" layoutX="282.0" layoutY="24.0" onMouseClicked="#mostrarProductosG" strokeType="OUTSIDE" strokeWidth="0.0" text="Para gatos" />
+      <Text fx:id="productosPerro" layoutX="366.0" layoutY="24.0" onMouseClicked="#mostrarProductosP" strokeType="OUTSIDE" strokeWidth="0.0" text="Para perros" />
+      <Text fx:id="veterinarias" layoutX="459.0" layoutY="24.0" onMouseClicked="#MostrarVeterinarias" strokeType="OUTSIDE" strokeWidth="0.0" text="Veterinarias" />
+      <Text fx:id="productosGenerales" layoutX="559.0" layoutY="24.0" onMouseClicked="#mostrarProductosGen" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuestros productos" />
+      <Text layoutX="45.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARRITO DE COMPRAS">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listaCarrito" layoutX="45.0" layoutY="108.0" prefHeight="301.0" prefWidth="449.0" />
+      <Button fx:id="eliminarItem" layoutX="239.0" layoutY="421.0" mnemonicParsing="false" onAction="#eliminarArticulo" text="Eliminar" />
+      <Text layoutX="596.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor total de la compra " wrappingWidth="140.7928466796875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="valorTotal" layoutX="618.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$00.00" textAlignment="CENTER" wrappingWidth="96.7928466796875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="realizarPago" layoutX="611.0" layoutY="267.0" mnemonicParsing="false" onAction="#realizarPago" text="Proceder al pago" />
+   </children>
+</AnchorPane>
